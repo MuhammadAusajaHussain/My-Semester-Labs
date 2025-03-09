@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22K-5186 WE Assignment 1</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white">
+    <div class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">WE Assignment</div>
+        <ul class="flex space-x-6">
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\index.html" class="hover:underline">Home</a></li>
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\about us\aboutUs.html" class="hover:underline">About Us</a></li>
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\contact us\contactUs.html" class="hover:underline">Contact Us</a></li>
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\quiz\quiz.html" class="hover:underline">Quiz</a></li>
+        </ul>
+    </div>
+    
+    <div class="relative w-full max-w-5xl mx-auto my-3">
+        <div class="overflow-hidden relative flex flex-row justify-center content-center items-center bg-gray-800 text-white text-3xl font-bold  h-70">
+            <div id="slides">
+                <div id="slide">
+                    <div>
+                        Welcome to the Ultimate Quiz Challenge
+                    </div>
+                </div>
+                <div id="slide">
+                    <div>&rarr; Select your own quiz</div>
+                    <div class="my-3">&rarr; Answer each question within 20 seconds</div>
+                    <div>&rarr; Test your knowledge</div>
+                </div>
+                <div id="slide" class="text-center">
+                    <div>Start Now and See How You Score!</div>
+                    <div>
+                        <u><a href="./quiz/quiz.html">Click Here to Begin</a></u>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
+            <button onclick="prevSlide()" class="bg-black text-white rounded mx-3 opacity-50 hover:opacity-100 min-w-7 min-h-8">
+                &#10094;
+            </button>
+        </div>
+        <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
+            <button onclick="nextSlide()" class="bg-black text-white rounded mx-3 opacity-50 hover:opacity-100 min-w-7 min-h-8">
+                &#10095;
+            </button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

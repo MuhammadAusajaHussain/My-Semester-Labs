@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22K-5186 WE Assignment 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">WE Assignment</div>
+        <ul class="flex space-x-6">
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\index.html" class="hover:underline">Home</a></li>
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\about us\aboutUs.html" class="hover:underline">About Us</a></li>
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\contact us\contactUs.html" class="hover:underline">Contact Us</a></li>
+            <li><a href="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\quiz\quiz.html" class="hover:underline">Quiz</a></li>
+        </ul>
+    </div>
+    
+    <div class="m-5 p-4">
+        <div id="courseSelectContainer" class="max-w-2xl mx-auto bg-black text-white p-6 rounded shadow flex flex-col justify-center items-center">
+            <h1 class="text-2xl font-bold text-center mb-4">Select a Course</h1>
+            <select id="courseSelect" class="text-black w-full p-2 border rounded mb-4">
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+            <button onclick="startQuiz()" class="bg-blue-500 text-white px-4 py-2 rounded w-1/2">Start Quiz</button>
+        </div>
+
+        <div id="quizContainer" class="max-w-2xl mx-auto bg-black text-white p-6 rounded shadow mt-6 hidden">
+            <h2 id="question" class="text-xl font-semibold mb-4"></h2>
+            <div id="optionsContainer" class="space-y-2"></div>
+            <p id="timer" class="text-red-500 font-bold mt-4"></p>
+            <div class="flex justify-between mt-4">
+                <button onclick="prevQuestion()" class="bg-blue-500 text-white px-4 py-2 rounded">Previous</button>
+                <button onclick="nextQuestion()" class="bg-blue-500 text-white px-4 py-2 rounded">Next</button>
+            </div>
+            <button onclick="submitQuiz()" id="submitBtn" class="bg-green-500 text-white px-4 py-2 rounded w-full mt-4 hidden">Submit</button>
+        </div>
+    </div>
+
+    <script src="C:\Users\Hi-Light Computers\OneDrive\Desktop\WE Assignment 1\quiz\app.js"></script>
+</body>
+</html>
