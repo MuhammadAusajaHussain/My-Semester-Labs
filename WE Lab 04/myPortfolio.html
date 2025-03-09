@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22K-5186 Ausaja's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md py-3 z-20">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold text-gray-800">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                <li><a href="#education" class="hover:text-blue-500">Education</a></li>
+                <li><a href="#volunteer" class="hover:text-blue-500">Volunteer</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="mt-24 bg-white py-3 shadow-md border-t border-gray-300">
+        <div class="container mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 text-center mb-2">Update Portfolio</h2>
+            <form id="updateForm" class="flex flex-wrap items-center justify-center gap-2">
+                <input id="nameInput" type="text" placeholder="Enter your name"
+                    class="border border-gray-400 px-3 py-2 rounded-lg w-48">
+                <input id="emailInput" type="text" placeholder="Enter your email"
+                    class="border border-gray-400 px-3 py-2 rounded-lg w-48">
+                <input id="phoneInput" type="text" placeholder="Enter your phone"
+                    class="border border-gray-400 px-3 py-2 rounded-lg w-48">
+                <input id="linkedinInput" type="text" placeholder="LinkedIn URL"
+                    class="border border-gray-400 px-3 py-2 rounded-lg w-48">
+                <button id="updateButton" type="button"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">
+                    Update
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto p-6 mt-6">
+        <div id="about" class="flex items-center">
+            <div class="w-24 h-24">
+                <img src="C:\Users\Hi-Light Computers\Downloads\FAST Logo.jpg" alt="Profile Picture"
+                    class="object-cover w-full h-full">
+            </div>
+            <div class="ml-6">
+                <h1 id="userName" class="text-2xl font-bold text-blue-600">Muhammad Ausaja Hussain</h1>
+                <h3 id="userEmail" class="text-gray-600">ausajamohammed@gmail.com</h3>
+                <h3 id="userPhone" class="text-gray-600">03162334145</h3>
+                <h3 class="text-gray-600"><span class="font-semibold">LinkedIn:</span> <a id="userLinkedIn"
+                        href="#" class="text-blue-500">Muhammad Ausaja</a></h3>
+            </div>
+        </div>
+
+        <div id="skills" class="grid md:grid-cols-2 gap-6 mt-6">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-700">Skills</h2>
+                <ul class="list-disc pl-5 mt-2 text-gray-600">
+                    <li><span class="font-semibold">Programming Languages:</span> C, Java, Python</li>
+                    <li><span class="font-semibold">Frontend:</span> HTML, CSS, JavaScript</li>
+                    <li><span class="font-semibold">Backend:</span> Node.js, Express, Spring Boot</li>
+                    <li><span class="font-semibold">Database:</span> MySQL, Oracle, MongoDB</li>
+                </ul>
+            </div>
+
+            <div id="education">
+                <h2 class="text-xl font-semibold text-gray-700">Education</h2>
+                <ul class="list-disc pl-5 mt-2 text-gray-600">
+                    <li>Bachelor's from FAST University, Karachi</li>
+                    <li>Intermediate from Aga Khan Secondary School, Karachi</li>
+                    <li>Matriculation from Al-Murtaza School</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="volunteer" class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-700">Volunteer Work</h2>
+            <ul class="list-disc pl-5 mt-2 text-gray-600">
+                <li>Assistant Event Manager at ProCom 2025</li>
+                <li>Assistant Event Manager at Developers Day 2024</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("updateButton").addEventListener("click", function () {
+            const name = document.getElementById("nameInput").value.trim();
+            const email = document.getElementById("emailInput").value.trim();
+            const phone = document.getElementById("phoneInput").value.trim();
+            const linkedin = document.getElementById("linkedinInput").value.trim();
+
+            if (name) {
+                document.getElementById("userName").textContent = name;
+            }
+            if (email) {
+                document.getElementById("userEmail").textContent = email;
+                document.getElementById("userEmail").href = `mailto:${email}`;
+            }
+            if (phone) {
+                document.getElementById("userPhone").textContent = phone;
+            }
+            if (linkedin) {
+                document.getElementById("userLinkedIn").href = linkedin;
+                document.getElementById("userLinkedIn").textContent = linkedin;
+            }
+        });
+    </script>
+</body>
+</html>
