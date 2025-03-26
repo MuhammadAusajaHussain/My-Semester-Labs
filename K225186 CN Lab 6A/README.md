@@ -11,12 +11,9 @@ Do the following:
 ![task2](https://github.com/user-attachments/assets/aee1e22f-a028-4914-9e7e-93d29f3568d1)
 
 Do the following:
- The IPs should be assigned to the computer using static method and to the router using CLI.
-The Network on one side of FastEthernet should like this XX.XX.YY.0 i.e. your roll number
-like 3879(38.79.1.0) and on another side it should be 3880(38.80.2.0).
- Run command of show run on Switch0 and Switch1 and take screenshot of it.
- Verify SSH and do assign IP to another interface of Router. It should be done through laptop0.
-Take screen shot of it.
+- The IPs should be assigned to the computer using static method and to the router using CLI. The Network on one side of FastEthernet should like this XX.XX.YY.0 i.e. your roll number like 3879(38.79.1.0) and on another side it should be 3880(38.80.2.0).
+- Run command of show run on Switch0 and Switch1 and take screenshot of it.
+- Verify SSH and do assign IP to another interface of Router. It should be done through laptop0. Take screen shot of it.
 
 ## Task-03
 Muhammad Nadeem Ghouri, a networking instructor at FAST University, assigned two hands-on tasks to his students to reinforce their skills in SSH and Telnet configurations on Cisco routers and switches. In the first task, students need to configure Telnet on a Cisco switch in Lab 08, where the university's networking team requires remote access for maintenance. They must enable VTY lines, set a login password, and verify Telnet access from a PC using command-line utilities. 
