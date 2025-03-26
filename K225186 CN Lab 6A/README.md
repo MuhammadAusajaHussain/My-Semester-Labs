@@ -1,4 +1,5 @@
 ## Task-01 Implement the topology given below on cisco packet tracer:
+![task1](https://github.com/user-attachments/assets/35fb1878-309f-4b37-becb-7b18f324244a)
 
 Do the following:
 - Assign IP to the computers/Laptops. The Network should like this XX.XX.YY.0. i.e. your roll number like 3879(38.79.1.0) and for all other networks Y should be replaced by 2, 3 and so on.
@@ -7,6 +8,7 @@ Do the following:
 - Do change the IP of Switch2 from PC user Nadeem using its command prompt.
 
 ## Task-02 Implement the topology given below on cisco packet tracer:
+![task2](https://github.com/user-attachments/assets/aee1e22f-a028-4914-9e7e-93d29f3568d1)
 
 Do the following:
  The IPs should be assigned to the computer using static method and to the router using CLI.
@@ -23,14 +25,14 @@ In the second task, students are required to configure SSH on a Cisco router in 
 ## Task-04
 Muhammad Nadeem Ghouri, the network administrator of Tech Innovators Software House, is tasked with setting up remote access for the IT team to manage network devices securely. The software house has two departments: Development and IT Support, with a total of four PCs, one router, and one switch for internal connectivity. The IT Support team requires SSH access for secure remote management, while the Development team needs Telnet access for basic troubleshooting.
 
-*Network Setup:*
+**Network Setup:**
 - 1 Cisco Router (Router1)
 - 1 Cisco Switch (Switch1)
 - 4 PCs
 - PC1 & PC2 (Development Team) – Require Telnet access to Switch1
 - PC3 & PC4 (IT Support Team) – Require SSH access to Router1
 
-*Task Instructions:*
+**Task Instructions:**
 - Configure Telnet on Switch1
 - Assign a hostname: Switch1
 - Set an enable password: cisco123
@@ -46,7 +48,7 @@ Muhammad Nadeem Ghouri, the network administrator of Tech Innovators Software Ho
 - Enable SSH version 2 and restrict remote login to SSH only.
 - Verify SSH access from PC3 or PC4 using an SSH client (ssh admin@Router1).
 
-*Final Verification:*
+**Final Verification:**
 - Ensure that PC1 & PC2 can connect to Switch1 using Telnet.
 - Ensure that PC3 & PC4 can securely connect to Router1 using SSH.
 - Use the show users and show ip ssh commands to verify active sessions.
